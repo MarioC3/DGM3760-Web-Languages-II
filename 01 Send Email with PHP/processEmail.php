@@ -1,4 +1,7 @@
 <?php
+
+require 'vendor/autoload.php';
+
 //Load variables
 $username = $_POST['username'];
 $password = $_POST['password'];
@@ -6,15 +9,28 @@ $email = $_POST['email'];
 $state = $_POST['state'];
 
 //email
-$to = 'me@betocarlos.com';
+$from = new SendGrid\Email($username, $email);
 $subject = 'New sign up';
-$message = "Hello There.\n" .
-"There has been a new sign up:\n" .
-"Username: $username\n" .
-"Password: $password\n" . 
-"Email: $email\n" . 
-"State: $state\n";
-mail($to, $subject, $message, 'From:' . $email);
+$to = new SendGrid\Email('Beto Carlos', 'me@betocarlos.com');
+$content = new SendGrid\Content('text/html', "<html>
+<body>
+<h1>Hello There!</h1>
+<p>Ther has been a new sign up:</p>
+<p>Username: $username</p>
+<p>Password: $password</p>
+<p>Email: $email</p>
+<p>State: $state</p>
+</body>
+</html>");
+$mail = new SendGrid\Mail($from, $subject, $to, $content);
+
+$apiKey = getenv('SENDGRID_API_KEY');
+$sg = new \SendGrid($apiKey);
+
+$response = $sg->client->mail()->send()->post($mail);
+// echo $response->statusCode();
+// print_r($response->headers());
+// echo $response->body();
 ?>
 
 <!DOCTYPE html>
@@ -23,8 +39,8 @@ mail($to, $subject, $message, 'From:' . $email);
 <head>
     <meta charset="UTF-8">
     <title>Sign up</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">\
-    <link rel="stylesheet" href="normalize-min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,900" rel="stylesheet">
 </head>

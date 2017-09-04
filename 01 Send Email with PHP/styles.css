@@ -1,12 +1,9 @@
-// General 
-$primary-color: #565653;
-$secondary-color: whitesmoke;
 
 body{
     font-family: 'Lato', sans-serif;
     background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: $primary-color;
-    height: 100vh;
+    color: #565653;
+    height: auto;
     line-height: 0;
     font-weight: 900;
 }
@@ -19,15 +16,18 @@ body{
     height: 100%;
 }
 
-// Header
+header{
+    margin-top: 30px;
+}
+
 h1{
-    color: $secondary-color;
+    color: whitesmoke;
     font-size: 2.5em;
     margin: 10px 20px;
     line-height: 115%;
 }
 
-//form
+
 #form{
     width: 100%;
 }
@@ -49,7 +49,7 @@ h1{
     border: none;
     background: #EFEFEF;
     line-height: 115%;
-    color: $primary-color;
+    color: #565653;
     margin-bottom: 10px;
 }
 
@@ -73,7 +73,7 @@ button{
     background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     padding: 20px 60px;
     border-radius: 10px;
-    color: $secondary-color;
+    color: whitesmoke;
     font-weight: 900;
     margin: 0 auto;
     transition: .2s all;
@@ -88,10 +88,10 @@ button:hover{
     text-align: center;
 }
 
-// Info
+
 
 #info{
-    color: $secondary-color;
+    color: whitesmoke;
     font-weight: 300;
     font-size: .5em;
     margin-top: 30px;
@@ -105,9 +105,14 @@ button:hover{
     width: 30px;
 }
 
-//Confirmation page
 .confirmation{
     text-align: center;
-    color: $secondary-color;
+    color: whitesmoke;
     font-weight: 300;
+}
+
+@media screen and (min-width: 380px){
+    body{
+        height: 100vh;
+    }
 }
