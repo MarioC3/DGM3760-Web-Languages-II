@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sign up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,900" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Get Started</h1>
+        </header>
+
+        <section id="form">
+            <div class="form-container">
+                <form action="processDatabase.php" method="POST" enctype="multipart/form-data">
+                    <label>
+                        <h3>Username</h3>
+                        <input class="text-input" name="username" type="text" required>
+                    </label>
+                    <label>
+                        <h3>Password</h3>
+                        <input class="text-input" name="password" type="password" required>
+                    </label>
+                    <label>
+                        <h3>Email Address</h3>
+                        <input class="text-input" name="email" type="email" required>
+                    </label>
+                    <label>
+                        <h3>State of Residency</h3>
+                        <select name="state" class="text-input" list="states" required>
+                            <option value="Utah">Utah</option>
+                            <option value="Idaho">Idaho</option>
+                            <option value="Colorado">Colorado</option>
+                        </select>
+                    </label>
+                    <div class="checkbox">
+                        <input type="checkbox" name="terms and conditions" value="checked" required> <span class="terms-text">I agree to all Terms and Conditions.</span>
+                    </div>
+                    <div class="button">
+                        <button class="submit" type="Submit" value="Submit">SIGN ME UP</button>
+                    </div>   
+                </form>
+            </div>
+        </section>
+
+        <section id="info">
+            <p>DGM-3760 02 - Connecting to MySQL</p>
+            <p>Made by Beto Carlos</p>
+            <a href="https://github.com/MarioC3/DGM-3760-01-Send-Email-with-PHP"><img src="images/github.svg" alt="Source Code"></a>
+        </section>
+    </div>
+
+</html>

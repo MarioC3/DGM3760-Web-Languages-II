@@ -1,0 +1,118 @@
+
+body{
+    font-family: 'Lato', sans-serif;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #565653;
+    height: auto;
+    line-height: 0;
+    font-weight: 900;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+header{
+    margin-top: 30px;
+}
+
+h1{
+    color: whitesmoke;
+    font-size: 2.5em;
+    margin: 10px 20px;
+    line-height: 115%;
+}
+
+
+#form{
+    width: 100%;
+}
+
+.form-container{
+    background: #FBFBFB;
+    height: auto;
+    width: 250px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.24);
+}
+
+
+.text-input{
+    width: 100%;
+    padding: 3px 0;
+    border: none;
+    background: #EFEFEF;
+    line-height: 115%;
+    color: #565653;
+    margin-bottom: 10px;
+}
+
+span{
+    font-weight: 300;
+    text-align: center;
+    font-size: .7em;
+}
+
+.terms-text{
+    font-size: .7em;
+}
+
+.checkbox{
+    margin: 30px auto 20px;
+    text-align: center;
+}
+
+button{
+    border: none;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 20px 60px;
+    border-radius: 10px;
+    color: whitesmoke;
+    font-weight: 900;
+    margin: 0 auto;
+    transition: .2s all;
+    cursor: pointer;
+}
+
+button:hover{
+    border-radius: 30px;
+}
+
+.button{
+    text-align: center;
+}
+
+
+
+#info{
+    color: whitesmoke;
+    font-weight: 300;
+    font-size: .5em;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 75%;
+}
+
+#info img{
+    margin: 20px auto;
+    display: block;
+    width: 30px;
+}
+
+.confirmation{
+    text-align: center;
+    color: whitesmoke;
+    font-weight: 300;
+}
+
+@media screen and (min-width: 380px){
+    body{
+        height: 100vh;
+    }
+}
