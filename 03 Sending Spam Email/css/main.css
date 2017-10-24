@@ -1,0 +1,90 @@
+body {
+  background: #163cba;
+  font-family: 'Hind', sans-serif;
+  color: #fd7139;
+  height: 100%; }
+
+.container {
+  height: 100%;
+  margin: 80px 0; }
+
+.row {
+  height: 100%; }
+
+.content {
+  padding: 0, 30px; }
+
+h1 {
+  font-weight: 700;
+  font-size: 3.5em;
+  color: #fd7139;
+  margin-bottom: 20px; }
+
+.nav-pills .nav-link {
+  border-radius: 0px; }
+
+.nav-pills .nav-link.active {
+  background: #fd7139; }
+
+.nav-pills a:hover {
+  color: #fd7139; }
+
+.form-control {
+  background: transparent;
+  color: whitesmoke; }
+
+.button {
+  background: #fd7139;
+  font-weight: 700;
+  font-size: 1.5em;
+  padding: 5px 30px;
+  color: #163cba;
+  cursor: pointer;
+  -webkit-transition: all .8s;
+  transition: all .8s; }
+
+button:hover {
+  background: transparent;
+  color: #fd7139;
+  border: 1px solid #fd7139; }
+
+div.form-group * {
+  margin-bottom: 15px; }
+
+textarea {
+  color: whitesmoke; }
+
+.form-control textarea:focus {
+  color: whitesmoke !important; }
+
+.footer {
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 20px;
+  background-color: #fd7139; }
+
+.footer p {
+  color: #163cba;
+  font-size: .8em;
+  margin-right: 10px;
+  margin-bottom: 0px; }
+
+.wrapper {
+  margin-top: 30px; }
+
+.btn {
+  background: #fd7139;
+  color: whitesmoke; }
+
+@media (min-width: 670px) {
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 20px;
+    line-height: 20px;
+    /* Vertically center the text there */
+    background-color: #fd7139; } }
+
+/*# sourceMappingURL=main.css.map */
