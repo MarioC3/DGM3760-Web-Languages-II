@@ -1,0 +1,33 @@
+html {
+  height: 100%; }
+  html body {
+    height: 100%; }
+    html body .hero .title {
+      font-size: 55px;
+      text-align: center; }
+    html body .navbar span {
+      font-weight: bold;
+      font-size: 25px; }
+    html body .hero .subtitle {
+      text-align: center; }
+    html body a.is-active {
+      font-weight: bold; }
+    html body .is-parent {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+    html body .card {
+      margin: 20px; }
+    html body div.nameTitle {
+      margin-bottom: 0; }
+
+body div.containerForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  body div.containerForm div.box {
+    width: 600px;
+    margin-bottom: 50px; }
+/*# sourceMappingURL=main.css.map */
